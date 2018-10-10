@@ -93,7 +93,7 @@ void loop() {
   
   byte data; 
   float sensVals[10]={0,0,0,0,0,0,0,0,0,0};
-
+  
   
   for (int i = 0; i < len; i++) {
      data = mtch.readRegister(MTCH6102_SENSORVALUE_RX0+i);
@@ -107,7 +107,7 @@ void loop() {
   }
 
   
-  
+  //センサー値を貯めて利用者の動きをチェック
   /*
   for (int i = 0; i<len; i++){
     float prev;
